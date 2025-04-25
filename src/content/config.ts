@@ -10,16 +10,12 @@ const work = defineCollection({
   }),
 })
 
-const blog = defineCollection({
-  type: "content",
-  schema: z.object({
-    title: z.string(),
-    summary: z.string(),
-    date: z.coerce.date(),
-    tags: z.array(z.string()),
-    draft: z.boolean().optional(),
-  }),
-})
+#const blog = defineCollection({
+  #type: "content",
+  #schema: z.object({
+    #title: z.string(),
+    #summary: z.string(),
+    
 
 const projects = defineCollection({
   type: "content",
